@@ -295,6 +295,7 @@ class _RegistrationState extends State<Registration> {
                           // }catch(e){print(e);}
                           // _auth.createUserWithEmailAndPassword(
                           //     email: email, password: password);
+                          //firebase
                           await AuthServices().signUp(nameController.text, emailController.text, passwordController.text);
 
                           doUserRegistration();

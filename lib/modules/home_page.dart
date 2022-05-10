@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                               style: Theme.of(context).textTheme.subtitle1,
                             ),
                             onPressed: () async {
-                             // await AuthServices() . signOut();
+                              await AuthServices() . signOut();
 
                               navigateTo(context, FingerprintPage());
                               loginData.clear();

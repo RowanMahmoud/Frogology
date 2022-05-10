@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:graduationproj1/modules/auth_service.dart';
@@ -120,7 +121,7 @@ class ChatPage extends StatelessWidget {
                 ),
               ),
                   IconButton(onPressed: () async {
-                    var msg=Message(content: msgController.text,createAt: Timestamp.now() , receiverUid: user.uid
+                    var msg=Message(content: msgController.text,createAt:Timestamp.now(), receiverUid: user.uid
                     , senderUid: AuthServices().user.uid);
                     msgController.clear();
                     await DBServices ().sendMessage(msg);

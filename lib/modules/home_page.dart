@@ -385,7 +385,6 @@ class _HomePageState extends State<HomePage> {
     switch (index) {
       case 0:
         AppCubit.get(context).changeAppMode();
-
         break;
       case 1:
         navigateTo(context, Chats());

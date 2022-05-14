@@ -183,8 +183,7 @@ class _FingerprintPageState extends State<FingerprintPage> {
                               //
                               // }
                               //firebase
-                              AuthServices().signIn(emailController.text, passwordController.text
-                              );
+                              AuthServices().signIn(emailController.text, passwordController.text);
                               navigateReplace(context, HomePage());
                               logindata.setBool('login', false);
                               logindata.setString('email', email);
